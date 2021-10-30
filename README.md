@@ -34,3 +34,44 @@ Não é obrigatório utilizar todas as as tecnologias sugeridas, mas será um di
 Qualquer dúvida / sugestão / melhoria / orientação adicional só enviar email para hendrix@wattio.com.br
 
 Salve!
+
+# Resolução
+
+
+### Documentação
+
+[Documentação das Rotas da API via OpenAPI3](http://localhost/docs)
+
+
+[Conventional Commits na padronização dos comentários do GIT](https://www.conventionalcommits.org/pt-br/v1.0.0/)
+
+| Username | Password |
+| -------- | -------- |
+| admin  | admin  |
+
+
+##### Build e execução dos containeres
+```sh
+docker-compose up --build -d
+```
+
+##### Execução dos testes iniciais(dentro do container)
+```sh
+cd /home/src/
+pytest
+```
+![image](https://user-images.githubusercontent.com/40257388/122339046-ee596c00-cf16-11eb-8652-6d69cea4f821.png)
+
+### Estrutura do arquivo .env no diretório /backend 
+
+```sh
+DEBUG=True
+PROJECT_NAME=API Luiz
+SECRET_KEY=l1d2b99ae9f502cd9bbb3c345337c0ca4e708b1c9e9fe1dbbcf30156c3630565a
+
+MARIADB_USER=user
+MARIADB_PASS=123456
+MARIADB_HOST=db
+MARIADB_DB=db
+
+```
